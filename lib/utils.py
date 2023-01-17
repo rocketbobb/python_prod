@@ -23,7 +23,7 @@ __all__ = [
     'printArgsKwargs',
     'load_json',
     'keysExist',
-    'myelin_payload',
+    'app_payload',
     'get_file_size',
     'get_env_value'
 ]
@@ -288,10 +288,10 @@ def get_file_size(file_name, size_type = SIZE_UNIT.BYTES ):
    size = os.path.getsize(file_name)
    return convert_unit(size, size_type)
 
-def myelin_payload(payloadType=None, 
+def app_payload(payloadType=None, 
     payloadVersion="0.1.0",
     requestTimestamp=None,
-    source="myelin_api"):
+    source="app_api"):
 
     payload = {
         "payloadHeaders": {
@@ -309,7 +309,7 @@ def myelin_payload(payloadType=None,
     }
     return payload
 
-def myelin_header():
+def app_header():
     return header
 
 def get_env_value(env_var=None):
