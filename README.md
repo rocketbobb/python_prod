@@ -1,12 +1,14 @@
 # python_prod
 
-python_prod
+python_prod - version 0.1
 
 Best practices for building production python applications
 
 """python_prod
 
-Work in progress to define a collection of best practices, funcations, wrappers and utilities designed to help produce python code that is "production ready"
+Work in progress to define a collection of best practices, functions, wrappers, and utilities designed to help produce python code that is "production ready". 
+
+Production ready is defined to build code that enforces consistent argument overrides, provides a standardized logging pattern for application log records, provides simple means to test new utilities, and defines a separate method and standardized format to handle application exceptions.
 
 Current items include:
 
